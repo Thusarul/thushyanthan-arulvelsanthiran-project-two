@@ -1,71 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mind n'Soul Contact Us</title>
-    <link href="https://fonts.googleapis.com/css2?family=Dokdo&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dokdo&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7cb514e665.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/contact.css">
+
 </head>
+
 <body>
 
     <header>
-        <!-- contact-image-1 -->
 
-        <h2>Mind n'Soul</h2>
+        <div class="wrapper">
 
-        <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Blog</li>
-            <li>Contact</li>
-        </ul>
+            <div class="flex spaceBetween">
 
-        <h1>
-            Get in Touch
-        </h1>
+                <h2>Mind n'Soul</h2>
+
+                <ul class="flex">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html/#about">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html" class="activePage">Contact</a></li>
+                </ul>
+
+            </div>
+
+            <h1>
+                Get in Touch
+            </h1>
+
+        </div>
 
     </header>
 
-    <form action="contactUs">
+    <section class="charcoal">
 
-        <label for="name">Name</label>
-        <input type="text" name="name" id="name">
+        <div class="wrapper flex">
 
-        <label for="email">Email address</label>
-        <input type="email" name="email" id="email">
-        
-        <label for="message">Message</label>
-        <input type="text" name="message" id="message">
+            <form action="contactUs" class="camoGreen boxShadow">
 
-        <button>Submit</button>
+                <div class="flex spaceBetween">
 
-    </form>
+                    <label for="name" class="sr-only">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Name" class="camoGreen">
+                    
+                    <label for="email" class="sr-only">Email address</label>
+                    <input type="email" name="email" id="email" placeholder="Email address" class="camoGreen">
+                    
+                </div>
 
-    <section>
+                    <label for="message" class="sr-only">Message</label>
+                    <textarea type="text" name="message" id="message" placeholder="Message" class="camoGreen"></textarea>
 
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
+                <button class="mudGreen">Submit</button>
 
-        <p>info@email.com</p>
+            </form>
 
-        <p>
-            123 - 456 - 7890 <br>
-            123 Queen Street West. <br>
-            Unit 10 <br>
-            Toronto, Ontario <br>
-            M5V2D5
-        </p>
+            <div class="contactInfo">
+
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-whatsapp"></i>
+
+                <p>info@email.com</p>
+
+                <br>
+
+                <p>
+                    123 - 456 - 7890 <br>
+                    123 Queen Street West. <br>
+                    Unit 10 <br>
+                    Toronto, Ontario <br>
+                    M5V2D5
+                </p>
+
+            </div>
+
+        </div>
 
     </section>
 
-    <footer>
+    <footer class="camoGreen">
 
         <p>Copyright © 2019 HackerYou</p>
 
     </footer>
-    
+
 </body>
+
 </html>
