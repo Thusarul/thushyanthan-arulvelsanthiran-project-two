@@ -226,12 +226,14 @@ h1{
 /* ----------------------------------------------------------------------------------------------------------------------------- */
 
 .paddingTop{
-    padding-top: 20rem;
+    padding-top: 25rem;
+    width: 100%;
 }
 
 .yogaPicOne{
     width: 100%;
-    padding-bottom: 10rem;
+    margin: 0 0 15rem 10rem;
+    box-shadow: -2rem 2rem #555f02;
 }
 
 .yogaGallery{
@@ -264,23 +266,31 @@ h1{
 }
 
 .spaceNeeded{
-    margin: 5rem 0 12rem;
+    margin: 3rem 0 12rem;
+}
+
+.spaceNeeded .halfWidth{
+    margin-top: 5rem;
+}
+
+#about{
+    margin-bottom: -10rem;
 }
 
 .detailsRightSide{
     position: relative;
-    left: calc((100vw - 116rem) / 2);
+    left: calc((100vw - 115.7rem) / 2);
     margin: 5rem 0;
 }
 
 .detailsLeftSide{
     position: relative;
-    right: calc((100vw - 116rem) / 2);
+    right: calc((100vw - 115.7rem) / 2);
     margin: 5rem 0;
 }
 
 .detailsRightSide p{
-    margin-right: calc((100vw - 116rem) / 2);
+    margin-right: calc((100vw - 115.7rem) / 2);
 }
 
 .detailsLeftSide p,
@@ -289,10 +299,49 @@ h1{
     margin-left: calc((100vw - 116rem) / 2);
 }
 
+.detailsLeftSide h3{
+    text-align: right;
+}
 
+.detailsLeftSide button{
+    position: absolute;
+    right: 0;
+}
 
+#about img{
+    padding: -5rem;
+}
 
+.shadowLeft{
+    box-shadow: 2rem 2rem #ffc600;
+    top: -7rem;
+    margin-bottom: -7rem;
+}
 
+.shadowRight{
+    box-shadow: -2rem 2rem #ffc600;
+    bottom: -7rem;
+    top: 0rem;
+}
+
+.banner img{
+    width: 100%;
+}
+
+.banner div{
+    height: 40rem;
+    width: 100%;
+    text-align: center;
+    margin-top: 15rem;
+}
+
+.banner p{
+    text-align: left;
+}
+
+footer{
+    text-align: center;
+}
 
 
 
