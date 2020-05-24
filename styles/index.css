@@ -17,7 +17,7 @@ body {
 }
 
 .wrapper {
-    max-width: 1140px;
+    max-width: 114rem;
     width: 90%;
     margin: 0 auto;
 }
@@ -55,6 +55,30 @@ button{
     flex-wrap: wrap;
 }
 
+.noFlex{
+    display: initial;
+}
+
+.floatLeft{
+    float: left;
+}
+
+.floatRight{
+    float: right;
+}
+
+.camoGreen{
+    background-color: #262725;
+}
+
+.charcoal{
+    background-color: #1e140e;
+}
+
+.mudGreen{
+    background-color: #555f02;
+}
+
 /* ----------------------------------------------------------------------------------------------------------------------------- */
 
 h2{
@@ -90,12 +114,20 @@ textarea{
     letter-spacing: .2rem;
 }
 
-button{
+.button{
     font-family: 'Dokdo', cursive;
     font-size: 3rem;
     width: 90%;
     padding: 1rem;
     margin: 0 5%;
+    border: none;
+}
+
+.index button{
+    font-family: 'Dokdo', cursive;
+    font-size: 3rem;
+    padding: 1rem;
+    margin: 2rem 0;
     border: none;
 }
 
@@ -107,6 +139,14 @@ p{
     letter-spacing: .2rem;
 }
 
+h4{
+    font-family: 'Dokdo', cursive;
+    font-size: 3rem;
+    line-height: 3.2rem;
+    letter-spacing: .2rem;
+    margin-bottom: 1rem;
+}
+
 i{
     font-size: 3rem;
     color: #ffc600;
@@ -114,14 +154,51 @@ i{
     margin-bottom: 2rem;
 }
 
+h3{
+    font-family: 'Dokdo', cursive;
+    font-size: 4.5rem;
+    line-height: 5.8rem;
+    letter-spacing: 0.49rem;
+    color: #ffc600;
+}
+
+aside p{
+    margin-bottom: 3rem;
+}
+
+aside ul{
+    padding-bottom: 3rem;
+}
+
+aside ul li{
+    text-align: left;
+    padding: 0;
+    margin: 0 0 0 2rem;
+}
+
+aside ul li::before{content: "•"; color: #ffc600; display: inline-block; width: 1rem; margin-left: -1rem; padding-right: 2rem;}
+
+span{
+    font-family: 'Lado', sans-serif;
+    font-weight: 300;
+    font-size: 4rem;
+    color: #fafff3;
+}
+
+.index h1{
+    padding-top: 10rem;
+}
+
+
 /* ----------------------------------------------------------------------------------------------------------------------------- */
 
 header {
-    background-image: url(./assets/contact-image-1.jpg);
+    background-image: url(./assets/home-image-1.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 80vh;
+    width: 100%;
 }
 
 header .wrapper{
@@ -138,67 +215,91 @@ ul li{
 
 h1{
     padding-top: 25rem;
+    padding-left: 3rem;
+}
+
+.yogaPic{
+    height: 60rem;
+    margin-top: 10rem;
 }
 
 /* ----------------------------------------------------------------------------------------------------------------------------- */
 
-.camoGreen{
-    background-color: #262725;
+.paddingTop{
+    padding-top: 20rem;
 }
 
-.charcoal{
-    background-color: #1e140e;
+.yogaPicOne{
+    width: 100%;
+    padding-bottom: 10rem;
 }
 
-.mudGreen{
-    background-color: #555f02;
+.yogaGallery{
+    width: calc(100% / 3);
+    padding: 1rem;
+    margin: 10rem auto;
 }
 
-.contactUs{
-    height: 45rem;
+.column{
+    flex-direction: column;
 }
 
-form{
-    width: 75%;
-    height: 50rem;
-    box-shadow: 2rem 2rem #ffc600;
-    position: relative;
-    top: -16rem;
-    left: -5rem;
-    margin-bottom: -20rem;
-    margin-left: -5rem;
+.halfWidth{
+    width: 50%;
 }
 
-.contactInfo{
-    width: 25%;
-    margin: 5% auto;
-}
-
-#name, #email{
-    border: none;
-    border-bottom: .2rem solid #ffc600;
-    width: 43%;
-    padding: 3rem 2rem 2rem;
-}
-
-#name{
-    margin-left: 5%;
-}
-
-#email{
-    margin-right: 5%;
-}
-
-#message{
-    border: .2rem solid #ffc600;
-    height: 25rem;
-    width: 90%;
-    padding: 3rem 2rem 2rem;
-    margin: 3rem 5%;
-}
-
-/* ----------------------------------------------------------------------------------------------------------------------------- */
-
-footer{
+.halfWidth i{
+    color: #fafff3;
+    border-radius: 50%;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
     text-align: center;
+    margin-right: 3rem;
 }
+
+.notIcon{
+    width: 90%;
+}
+
+.spaceNeeded{
+    margin: 5rem 0 12rem;
+}
+
+.detailsRightSide{
+    position: relative;
+    left: calc((100vw - 116rem) / 2);
+    margin: 5rem 0;
+}
+
+.detailsLeftSide{
+    position: relative;
+    right: calc((100vw - 116rem) / 2);
+    margin: 5rem 0;
+}
+
+.detailsRightSide p{
+    margin-right: calc((100vw - 116rem) / 2);
+}
+
+.detailsLeftSide p,
+.detailsLeftSide h3,
+.detailsLeftSide button{
+    margin-left: calc((100vw - 116rem) / 2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
