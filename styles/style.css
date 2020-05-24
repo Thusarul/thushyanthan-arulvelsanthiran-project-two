@@ -1,0 +1,755 @@
+@charset "UTF-8";
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+article, aside, footer, header, nav, section {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+figcaption, figure, main {
+  display: block;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+b, strong {
+  font-weight: inherit;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+code, kbd, samp {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+sup {
+  top: -.5em;
+}
+
+audio, video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+img {
+  border-style: none;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+button, input, optgroup, select, textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button, input {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, html [type=button], [type=reset], [type=submit] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: .35em .75em .625em;
+}
+
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+progress {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type=checkbox], [type=radio] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+details, menu {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+canvas {
+  display: inline-block;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: '';
+  clear: both;
+  height: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* COMMON STARTS HERE ----------------------------------------------------------------------------------------------------------------------------- */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.wrapper {
+  max-width: 114rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+body,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a,
+input,
+textarea,
+button {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  color: #fafff3;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.spaceBetween {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flexWrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.noFlex {
+  display: initial;
+}
+
+.floatLeft {
+  float: left;
+}
+
+.floatRight {
+  float: right;
+}
+
+.camoGreen {
+  background-color: #262725;
+}
+
+.charcoal {
+  background-color: #1e140e;
+}
+
+.mudGreen {
+  background-color: #555f02;
+}
+
+.activePage {
+  color: #ffc600;
+}
+
+/* COMMON FONTS---------------------------------------------------------------------------------------------------------------- */
+h1 {
+  font-family: 'Dokdo', cursive;
+  font-size: 10.5rem;
+  line-height: 6.96rem;
+  letter-spacing: 1.09rem;
+  color: #ffc600;
+}
+
+h2 {
+  font-family: 'Dokdo', cursive;
+  font-size: 4.15rem;
+  text-align: center;
+  color: #ffc600;
+}
+
+h3 {
+  font-family: 'Dokdo', cursive;
+  font-size: 4.5rem;
+  line-height: 5.8rem;
+  letter-spacing: 0.49rem;
+  color: #ffc600;
+}
+
+h4 {
+  font-family: 'Dokdo', cursive;
+  font-size: 3rem;
+  line-height: 3.2rem;
+  letter-spacing: .2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  letter-spacing: .2rem;
+}
+
+li {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 2.9rem;
+  letter-spacing: .1rem;
+}
+
+i {
+  font-size: 3rem;
+  color: #ffc600;
+  padding-right: 2rem;
+  margin-bottom: 2rem;
+}
+
+input,
+textarea {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  letter-spacing: .2rem;
+}
+
+/* HEADER CUSTOMIZATIONS ----------------------------------------------------------------------------------------------------------------------------- */
+header {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+}
+
+header .wrapper {
+  padding-top: 2rem;
+}
+
+header h1 {
+  padding-top: 25rem;
+}
+
+header ul li {
+  padding: 1rem 2rem;
+}
+
+/* FOOTER CUSTOMIZATIONS ----------------------------------------------------------------------------------------------------------------------------- */
+footer {
+  text-align: center;
+}
+
+.index header {
+  background-image: url(./assets/home-image-1.jpg);
+}
+
+.index header h1 {
+  padding-top: 10rem;
+  padding-left: 3rem;
+}
+
+.index header span {
+  font-family: 'Lado', sans-serif;
+  font-weight: 300;
+  font-size: 4rem;
+  color: #fafff3;
+}
+
+.index header .yogaPic {
+  height: 60rem;
+  margin-top: 10rem;
+}
+
+.index button {
+  font-family: 'Dokdo', cursive;
+  font-size: 3rem;
+  padding: 1rem;
+  margin: 2rem 0;
+  border: none;
+}
+
+.index .paddingTop {
+  padding-top: 25rem;
+  width: 100%;
+}
+
+.index .yogaPicOne {
+  width: 100%;
+  margin: 0 0 15rem 10rem;
+  -webkit-box-shadow: -2rem 2rem #555f02;
+          box-shadow: -2rem 2rem #555f02;
+}
+
+.index .yogaGallery {
+  width: calc(100% / 3);
+  padding: 1rem;
+  margin: 10rem auto;
+}
+
+.index .column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.index .halfWidth {
+  width: 50%;
+}
+
+.index .halfWidth i {
+  color: #fafff3;
+  border-radius: 50%;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  margin-right: 3rem;
+}
+
+.index .notIcon {
+  width: 90%;
+}
+
+.index .spaceNeeded {
+  margin: 3rem 0 12rem;
+}
+
+.index .spaceNeeded .halfWidth {
+  margin-top: 5rem;
+}
+
+.index #about {
+  margin-bottom: -10rem;
+}
+
+.index #about img {
+  padding: -5rem;
+}
+
+.index .detailsRightSide {
+  position: relative;
+  left: calc((100vw - 115.7rem) / 2);
+  margin: 5rem 0;
+}
+
+.index .detailsRightSide p {
+  margin-right: calc((100vw - 115.7rem) / 2);
+}
+
+.index .detailsLeftSide {
+  position: relative;
+  right: calc((100vw - 115.7rem) / 2);
+  margin: 5rem 0;
+}
+
+.index .detailsLeftSide h3 {
+  margin-left: calc((100vw - 116rem) / 2);
+  text-align: right;
+}
+
+.index .detailsLeftSide p {
+  margin-left: calc((100vw - 116rem) / 2);
+}
+
+.index .detailsLeftSide button {
+  margin-left: calc((100vw - 116rem) / 2);
+  position: absolute;
+  right: 0;
+}
+
+.index .shadowLeft {
+  -webkit-box-shadow: 2rem 2rem #ffc600;
+          box-shadow: 2rem 2rem #ffc600;
+  top: -7rem;
+  margin-bottom: -7rem;
+}
+
+.index .shadowRight {
+  -webkit-box-shadow: -2rem 2rem #ffc600;
+          box-shadow: -2rem 2rem #ffc600;
+  bottom: -7rem;
+  top: 0rem;
+}
+
+.index .banner img {
+  width: 100%;
+}
+
+.index .banner div {
+  height: 40rem;
+  width: 100%;
+  text-align: center;
+  margin-top: 15rem;
+}
+
+.index .banner p {
+  text-align: left;
+}
+
+.blog header {
+  background-image: url(./assets/blog-image-1.jpg);
+}
+
+.blog .gong {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: calc(100% - 2rem);
+  height: 100%;
+  -webkit-box-shadow: 2.8rem 2rem #555f02;
+          box-shadow: 2.8rem 2rem #555f02;
+  position: relative;
+  top: -16rem;
+  margin-bottom: -10rem;
+}
+
+.blog .mainSection {
+  width: calc((100vw - 114rem) / 2 + (114rem * .75));
+  border-bottom: .5rem solid #555f02;
+  border-right: .5em solid #555f02;
+  padding-bottom: 3rem;
+  margin-bottom: 5rem;
+}
+
+.blog .mainSection h3 {
+  padding-left: calc((100vw - 114rem) / 2);
+}
+
+.blog .mainSection p {
+  padding-left: calc((100vw - 114rem) / 2);
+}
+
+.blog .comments {
+  width: calc((100vw - 114rem) / 2 + (114rem * .75));
+  padding-left: calc((100vw - 114rem) / 2);
+}
+
+.blog .comments h3 {
+  color: inherit;
+  padding: 3rem 0;
+}
+
+.blog .comments .commenter {
+  width: 100%;
+  padding-top: 2rem;
+}
+
+.blog .comments .commenter img {
+  width: 10%;
+  float: left;
+  margin: 0 2rem 5rem 0;
+}
+
+.blog .comments .commenter .date {
+  color: #ffc600;
+}
+
+.blog .comments .commenter p {
+  width: 100%;
+}
+
+.blog .comments .davin {
+  padding-bottom: 8rem;
+}
+
+.blog aside {
+  float: right;
+  width: calc((100% / 4) - 2.5%);
+  margin: 5% auto;
+  padding-left: 2rem;
+}
+
+.blog aside img {
+  width: 100%;
+  position: relative;
+  top: -2rem;
+}
+
+.blog aside p {
+  margin-bottom: 3rem;
+}
+
+.blog aside ul {
+  padding-bottom: 3rem;
+}
+
+.blog aside ul li {
+  text-align: left;
+  padding: 0;
+  margin: 0 0 0 2rem;
+}
+
+.blog aside ul li ::before {
+  content: "•";
+  color: #ffc600;
+  display: inline-block;
+  width: 1rem;
+  margin-left: -1rem;
+  padding-right: 2rem;
+}
+
+.blog form {
+  width: calc((100vw - 114rem) / 2 + (114rem * .75));
+  padding-left: calc((100vw - 114rem) / 2);
+  height: 50rem;
+  margin-top: 5rem;
+}
+
+.blog form #name {
+  border: none;
+  border-bottom: .2rem solid #ffc600;
+  width: 43%;
+  padding: 3rem 2rem 2rem;
+  margin-left: 5%;
+}
+
+.blog form #email {
+  border: none;
+  border-bottom: .2rem solid #ffc600;
+  width: 43%;
+  padding: 3rem 2rem 2rem;
+  margin-right: 5%;
+}
+
+.blog form #comment {
+  border: .2rem solid #ffc600;
+  height: 25rem;
+  width: 90%;
+  padding: 3rem 2rem 2rem;
+  margin: 3rem 5%;
+}
+
+.blog form button {
+  font-family: 'Dokdo', cursive;
+  font-size: 3rem;
+  width: 90%;
+  padding: 1rem;
+  margin: 0 5%;
+  border: none;
+}
+
+.contact header {
+  background-image: url(./assets/contact-image-1.jpg);
+}
+
+.contact .contactUs {
+  height: 45rem;
+}
+
+.contact .contactUs form {
+  width: 75%;
+  height: 50rem;
+  -webkit-box-shadow: 2rem 2rem #ffc600;
+          box-shadow: 2rem 2rem #ffc600;
+  position: relative;
+  top: -16rem;
+  left: -5rem;
+  margin-bottom: -20rem;
+  margin-left: -5rem;
+}
+
+.contact .contactUs form #name {
+  border: none;
+  border-bottom: .2rem solid #ffc600;
+  width: 43%;
+  padding: 3rem 2rem 2rem;
+  margin-left: 5%;
+}
+
+.contact .contactUs form #email {
+  border: none;
+  border-bottom: .2rem solid #ffc600;
+  width: 43%;
+  padding: 3rem 2rem 2rem;
+  margin-right: 5%;
+}
+
+.contact .contactUs form #message {
+  border: .2rem solid #ffc600;
+  height: 25rem;
+  width: 90%;
+  padding: 3rem 2rem 2rem;
+  margin: 3rem 5%;
+}
+
+.contact .contactUs form button {
+  font-family: 'Dokdo', cursive;
+  font-size: 3rem;
+  width: 90%;
+  padding: 1rem;
+  margin: 0 5%;
+  border: none;
+}
+
+.contact .contactUs .contactInfo {
+  width: 25%;
+  margin: 5% auto;
+}
