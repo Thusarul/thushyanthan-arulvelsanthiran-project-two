@@ -253,6 +253,7 @@ body {
 
 body,
 ul,
+li,
 h1,
 h2,
 h3,
@@ -475,11 +476,12 @@ footer {
 }
 
 .index header .yogaPic {
-  height: 60rem;
+  width: 40%;
+  height: auto;
   margin-top: 10rem;
 }
 
-.index button {
+.index .notMenu {
   font-family: 'Dokdo', cursive;
   font-size: 3rem;
   padding: 1rem;
@@ -488,7 +490,7 @@ footer {
 }
 
 .index .paddingTop {
-  padding-top: 25rem;
+  padding-top: 15rem;
   width: 100%;
 }
 
@@ -819,18 +821,62 @@ footer {
   .contact .contactUs {
     height: 100rem;
   }
-  .contact .contactUs div form {
+  .contact .contactUs .aside form {
     margin: 0 auto;
+  }
+  .contact .contactUs .aside .contactInfo {
+    width: 50%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1250px) {
+  .index #about div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
 @media (min-width: 1101px) {
-  .blog .hidden {
+  .hidden {
     display: none;
   }
 }
 
 @media (max-width: 1100px) {
+  .notHidden {
+    display: none;
+  }
+  .index .realigning {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    top: -8rem;
+  }
+  .index .realigning img {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .index .paddingTop {
+    padding-top: 0;
+  }
+  .index .paddingTop img {
+    position: relative;
+    top: 5rem;
+  }
+  .index .banner div {
+    width: 90%;
+  }
   .blog main {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -861,9 +907,6 @@ footer {
     width: 95;
     height: auto;
   }
-  .blog main .notHidden {
-    display: none;
-  }
   .blog .comments {
     width: 90%;
     margin: 0 auto;
@@ -871,21 +914,43 @@ footer {
   .blog form {
     margin: 5rem auto;
   }
-  .blog .contact .contactUs .contactInfo {
-    width: 100%;
-    text-align: center;
+}
+
+@media (max-width: 960px) {
+  .index .paddingTop {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 85rem;
+  }
+  .index .paddingTop img {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .index .banner .wrapper {
+    margin-top: 5rem;
   }
 }
 
 @media (max-width: 920px) {
+  .index .quickLinks .lineUp {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .index .quickLinks .lineUp .halfWidth {
+    width: 90%;
+    margin: 0 auto 4rem;
+  }
   .blog .comments .commenter img {
     width: 20%;
   }
-}
-
-@media (max-width: 860px) {
-  .contact .contactInfo p {
-    width: 100%;
+  .contact h1 {
+    position: relative;
+    top: -10rem;
+    text-align: center;
   }
 }
 
@@ -903,6 +968,34 @@ footer {
 @media (max-width: 801px) {
   .bar {
     display: none;
+  }
+  .index .gallery {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .index .gallery .yogaGallery {
+    width: 100%;
+    margin: 5rem auto;
+  }
+  .index #about {
+    padding-bottom: 5rem;
+  }
+  .index #about .halfWidth {
+    width: 100%;
+  }
+  .index #about .detailsLeftSide {
+    right: 0;
+  }
+  .index #about .detailsLeftSide p {
+    margin-left: 0;
+  }
+  .index #about .detailsRightSide {
+    left: 0;
+  }
+  .index #about .detailsRightSide p {
+    margin-right: 0;
   }
   .blog h1 {
     text-align: center;
@@ -947,14 +1040,19 @@ footer {
   .contact h1 {
     width: 80%;
   }
-  .contact .contactUs form {
-    width: 90%;
-    position: relative;
-    left: 0;
-  }
 }
 
 @media (max-width: 700px) {
+  .index header {
+    text-align: center;
+  }
+  .index header h1 {
+    padding-left: 0;
+    font-size: 5rem;
+  }
+  .index .banner .wrapper {
+    margin-bottom: 5rem;
+  }
   .blog main h3 {
     font-size: 3.5rem;
   }
@@ -977,11 +1075,21 @@ footer {
 }
 
 @media (max-width: 600px) {
+  .index p {
+    font-size: 1.5rem;
+  }
+  .index .paddingTop img {
+    width: 80%;
+  }
   .blog li {
     font-size: 1rem;
   }
   .blog form {
     width: 95%;
+  }
+  .contact .contactUs form {
+    width: 95%;
+    left: 0;
   }
 }
 
@@ -999,6 +1107,9 @@ footer {
 }
 
 @media (max-width: 500px) {
+  .index .banner .wrapper {
+    margin-bottom: 10rem;
+  }
   .blog aside {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1025,5 +1136,8 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .contact h1 {
+    top: -15rem;
   }
 }
