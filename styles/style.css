@@ -611,19 +611,6 @@ footer {
   background-image: url(./assets/blog-image-1.jpg);
 }
 
-.blog .gong {
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: calc(100% - 2rem);
-  height: 100%;
-  -webkit-box-shadow: 2.8rem 2rem #555f02;
-          box-shadow: 2.8rem 2rem #555f02;
-  position: relative;
-  top: -16rem;
-  margin-bottom: -10rem;
-}
-
 .blog .mainSection {
   width: calc((100vw - 114rem) / 2 + (114rem * .75));
   border-bottom: .5rem solid #555f02;
@@ -638,6 +625,19 @@ footer {
 
 .blog .mainSection p {
   padding-left: calc((100vw - 114rem) / 2);
+}
+
+.blog .mainSection .gong {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: calc(100% - 2rem);
+  height: 100%;
+  -webkit-box-shadow: 2.8rem 2rem #555f02;
+          box-shadow: 2.8rem 2rem #555f02;
+  position: relative;
+  top: -16rem;
+  margin-bottom: -10rem;
 }
 
 .blog .comments {
@@ -700,7 +700,7 @@ footer {
   margin: 0 0 0 2rem;
 }
 
-.blog aside ul li ::before {
+.blog aside ul li::before {
   content: "•";
   color: #ffc600;
   display: inline-block;
@@ -824,10 +824,62 @@ footer {
   }
 }
 
+@media (min-width: 1101px) {
+  .blog .hidden {
+    display: none;
+  }
+}
+
 @media (max-width: 1100px) {
-  .contact .contactUs .contactInfo {
+  .blog main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blog main aside {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 90%;
+  }
+  .blog main aside img {
+    margin-right: 3rem;
+  }
+  .blog main .mainSection {
+    width: 95%;
+    margin: 20rem 5% 5rem;
+    position: relative;
+    right: 5vw;
+    padding: 0 0 2rem 5rem;
+  }
+  .blog main .mainSection .gong {
+    margin: 0 auto;
+    width: 95;
+    height: auto;
+  }
+  .blog main .notHidden {
+    display: none;
+  }
+  .blog .comments {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .blog form {
+    margin: 5rem auto;
+  }
+  .blog .contact .contactUs .contactInfo {
     width: 100%;
     text-align: center;
+  }
+}
+
+@media (max-width: 920px) {
+  .blog .comments .commenter img {
+    width: 20%;
   }
 }
 
@@ -852,6 +904,25 @@ footer {
   .bar {
     display: none;
   }
+  .blog h1 {
+    text-align: center;
+  }
+  .blog form {
+    height: 60rem;
+  }
+  .blog form div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blog form div #name,
+  .blog form div #email {
+    width: 90%;
+  }
+  .blog form div #email {
+    margin-left: 5%;
+  }
   .contact h1 {
     width: 50%;
     margin: 0 auto;
@@ -869,6 +940,10 @@ footer {
 }
 
 @media (max-width: 751px) {
+  .blog p,
+  .blog li {
+    font-size: 1.5rem;
+  }
   .contact h1 {
     width: 80%;
   }
@@ -879,9 +954,76 @@ footer {
   }
 }
 
+@media (max-width: 700px) {
+  .blog main h3 {
+    font-size: 3.5rem;
+  }
+  .blog .comments h3 {
+    text-align: center;
+  }
+  .blog .comments .commenter img {
+    width: 30%;
+  }
+}
+
+@media (max-width: 651px) {
+  .blog p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .blog .comments .commenter img {
+    width: 10%;
+  }
+}
+
+@media (max-width: 600px) {
+  .blog li {
+    font-size: 1rem;
+  }
+  .blog form {
+    width: 95%;
+  }
+}
+
 @media (max-width: 551px) {
   header .drop {
     position: absolute;
     right: 50px;
+  }
+  .blog aside h4 {
+    font-size: 2rem;
+  }
+  .blog aside li {
+    line-height: 1.9rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .blog aside {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blog aside div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blog aside div div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
